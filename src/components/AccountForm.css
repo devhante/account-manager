@@ -1,0 +1,17 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > div {
+    padding: 4px;
+}
+
+.formLabel {
+    display: flex;
+    margin-right: 8px;
+}
+
+.formLabel > div {
+    width: 100px;
+}

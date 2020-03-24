@@ -1,0 +1,28 @@
+th, td {
+    border: 1px solid black;
+}
+
+.id {
+    width: 100px;
+}
+
+.password {
+    width: 180px;
+}
+
+.name {
+    width: 100px;
+}
+
+.position {
+    width: 80px;
+}
+
+.isUsing {
+    width: 120px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
