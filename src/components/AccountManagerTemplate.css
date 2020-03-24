@@ -1,0 +1,14 @@
+.account-manager-template {
+    display: flex;
+    width: 1200px;
+}
+
+.list-wrapper {
+    flex-grow: 2;
+    padding: 20px;
+}
+
+.form-wrapper {
+    flex-grow: 1;
+    padding: 20px;
+}
