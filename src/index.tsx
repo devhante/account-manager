@@ -1,13 +1,17 @@
+import { Provider } from 'mobx-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
+import RootStore from './stores/root';
+
+const root = new RootStore();
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider root={root}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
