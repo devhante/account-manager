@@ -1,9 +1,9 @@
-import ManagerStore from './manager';
+import AccountStore from './account';
 
 export default class RootStore {
-    public managerStore: ManagerStore;
+    public accountStore: AccountStore;
 
     constructor() {
-        this.managerStore = new ManagerStore(this);
+        this.accountStore = new AccountStore(this);
     }
 }

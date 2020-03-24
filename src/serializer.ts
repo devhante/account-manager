@@ -1,4 +1,4 @@
-export class ManagerSerializer {
+export class AccountSerializer {
     public id: number;
     public password: number;
     public name: string;

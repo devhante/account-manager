@@ -2,8 +2,8 @@ import { observable } from 'mobx';
 import { ManagerSerializer} from '../serializer';
 import RootStore from './root';
 
-export default class ManagerStore {
-    @observable public ManagerList: ManagerSerializer[] = [];
+export default class AccountStore {
+    @observable public AccountList: AccountSerializer[] = [];
     private rootStore: RootStore;
 
     constructor(rootStore: RootStore) {
