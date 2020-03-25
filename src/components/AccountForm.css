@@ -1,3 +1,29 @@
+.addButton {
+    width: 120px;
+    border: 1px solid black;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formButtons {
+    display: flex;
+}
+
+.formButtons > div {
+    width: 60px;
+    border: 1px solid black;
+    padding: 4px;
+    margin-top: 20px;
+    margin-right: 12px;
+    text-align: center;;
+}
+
+.button:hover {
+    background-color: powderblue;
+    cursor: pointer;
+}
+
 .form {
     display: flex;
     flex-direction: column;
