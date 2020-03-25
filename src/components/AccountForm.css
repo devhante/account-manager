@@ -41,3 +41,9 @@
 .formLabel > div {
     width: 100px;
 }
+
+.idText {
+    margin-left: 8px;
+    font-size: 12px;
+    color: red;
+}

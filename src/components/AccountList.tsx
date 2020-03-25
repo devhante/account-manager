@@ -11,10 +11,11 @@ interface IProps {
 @inject('root')
 @observer
 export default class AccountList extends React.Component<IProps> {
+    private root = this.props.root as RootStore;
     // @action
     // private test_save = () => {
     //     const root = this.props.root as RootStore;
-    //     root.accountStore.AccountList = [
+    //     root.accountStore.accountList = [
     //         new AccountSerializer("000123", "1234", "조경욱", "사원", true),
     //         new AccountSerializer("000124", "6789", "테스트", "인턴", true),
     //     ]
@@ -24,14 +25,13 @@ export default class AccountList extends React.Component<IProps> {
     // @action
     // private test_load = () => {
     //     const root = this.props.root as RootStore;
-    //     console.log(root.accountStore.AccountList);
+    //     console.log(root.accountStore.accountList);
     //     root.accountStore.load();
-    //     console.log(root.accountStore.AccountList);
+    //     console.log(root.accountStore.accountList);
     // }
 
     public render() {
-        const root = this.props.root as RootStore;
-        const list = root.accountStore.AccountList.map((item) => (
+        const list = this.root.accountStore.accountList.map((item) => (
             <AccountItem info={item} />
         ));
 
